@@ -1,0 +1,90 @@
+/* Estilos compartidos por las 3 páginas: el foco de esta tarea es el backend,
+   aquí solo buscamos una interfaz mínima, centrada y legible. */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background: #0d0b14;
+  color: #f0eaff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+h1 {
+  margin-bottom: 24px;
+  color: #b967ff;
+}
+
+form {
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  font-size: 14px;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #2f2640;
+  border-radius: 6px;
+  background: #17131f;
+  color: #f0eaff;
+}
+
+input:focus {
+  outline: none;
+  border-color: #b967ff;
+}
+
+button {
+  padding: 12px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 6px;
+  background: #b967ff;
+  color: #0d0b14;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #cd8bff;
+}
+
+.mensaje {
+  margin-top: 16px;
+  min-height: 20px;
+  text-align: center;
+}
+
+.mensaje.error,
+#mensaje.error {
+  color: #ff7b9c;
+}
+
+.mensaje.exito,
+#mensaje.exito {
+  color: #b967ff;
+}
+
+.enlace {
+  margin-top: 16px;
+  font-size: 13px;
+}
+
+.enlace a {
+  color: #b967ff;
+}
